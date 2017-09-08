@@ -1,0 +1,270 @@
+html, body {
+    font-family: 'Architects Daughter', cursive;
+    background:#f8f8f8 url("../img/asfalt.png") repeat;
+    height: 100%;
+    width: 100%;
+}
+
+/** NAVBAR **/
+.navbar-inverse {
+    background: none;
+    border: none;
+    background:#f8f8f8 url("../img/asfalt.png") repeat;
+    
+}
+#nav {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 18px;
+    height: 36px;
+    list-style: none outside none;
+    margin:40px auto;
+    text-shadow: none;
+    
+}
+.hero {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.bcolor {
+    color: black !Important;
+}
+
+
+#nav li {
+    border-bottom: 1px solid #575757;
+    border-left: 1px solid #929292;
+    border-right: 1px solid #5d5d5d;
+    border-top: 1px solid #797979;
+    display: block;
+    float: left;
+    height: 34px;
+    position: relative;
+    width: 115px;
+}
+#nav > li:first-child {
+    border-left: 0 none;
+    margin-left: 5px;
+}
+
+/*#nav ul {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+    z-index: 2;
+}
+#nav ul li {
+    background: none repeat scroll 0 0 #000000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}*/
+#nav li a {
+    padding: 0;
+    color: #FFFFFF;
+    display: block;
+    line-height: 34px;
+    outline: medium none;
+    text-align: left;
+    padding-left: 10%;
+    text-decoration: none;
+    background-color: white;
+
+    /* gradient
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #787878), color-stop(0.5, #D3D3D3), color-stop(0.51, #D3D3D3), color-stop(1, #838383));
+    background-image: -moz-linear-gradient(center bottom, #787878 0%, #5E5E5E 50%, #707070 51%, #838383 100%);
+    background-color: #5f5f5f;
+    */
+}
+
+/* keyframes #animation */
+@-webkit-keyframes animation {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    30% {
+        -webkit-transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+    }
+}
+@-moz-keyframes animation {
+    0% {
+        -moz-transform: scale(1);
+    }
+    30% {
+        -moz-transform: scale(1.2);
+    }
+    100% {
+        -moz-transform: scale(1.1);
+    }
+}
+#nav li > a:hover {
+    z-index: 10;
+    /* CSS3 animation */
+    -webkit-animation-name: animation;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: animation;
+    -moz-animation-duration: 0.3s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+#nav li:hover ul {
+    left: 0;
+    top: 34px;
+    width: 150px;
+}
+
+
+/** LANDING PAGE **/
+.intro {
+    color: rgba(255, 255, 255, 0.3);
+    padding-top: 10%;
+    padding-bottom: 5%;
+    text-align: center;
+
+}
+.image {
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
+    transform: rotate(-8deg);
+}
+
+.landing {
+    position: relative;
+    padding: 60px 0 60px 0;
+    width: 100%;
+    min-height: 100%;
+    color: #fff;
+}
+
+body > section {
+    clear: both;
+    padding: 50px 0;
+
+}
+/** ABOUT SECTION **/
+
+.about {
+    padding-top: 5%;
+}
+section#about .one {
+    padding-bottom: 40px;
+    color: rgba(255, 255, 255, 0.2);
+   
+}
+
+section#about .two {
+    padding-bottom: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+
+h2, h3 {
+    color: darkgray;
+
+}
+
+
+
+/** GAMES SECTION **/
+.games {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.imgborder {
+    border-width: 5px;
+    border-color: white;
+}
+
+/** TUTORIALS SECTION **/
+.tutorials {
+    padding-top: 5%;
+}
+
+/** PROJECTS SECTION **/
+.projects {
+    padding-top: 5%;
+}
+
+.someclass {
+    padding-top: 12%;
+}
+
+/** AWARDS SECTION **/
+.awards {
+    padding-top: 5%;
+}
+
+/** OYSTERS & PEARLS SECTION **/
+.oandp {
+    padding-top: 5%;
+}
+
+
+/** CONTACT SECTION **/
+section#contact {
+    
+}
+
+section#contact input,  section#contact textarea{
+    background-color: dimgray;
+    color: white;
+
+}
+
+section#contact textarea{
+    min-height: 200px;
+
+}
+
+section#contact input.btn {
+    min-width: 100px;
+    border-color: green;
+    
+}
+
+.icons {
+    float:left; 
+    padding:10px;
+}
+
+/* ==========================================================================
+Media Queries
+========================================================================== */
+
+@media(min-width: 768px) {
+    .webidentity {
+        padding-top: 50%;
+    }
+}
+
+@media(max-width: 768px) {
+    section#about .two {
+        padding-bottom: 40px;
+        padding-left: 0%;
+    }
+    
+    .hero {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    
+    .someclass {
+        padding-top: 0%;
+    }
+}
